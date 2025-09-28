@@ -39,21 +39,19 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="px-6 py-16 bg-gradient-to-br from-muted/30 via-background to-muted/20">
-      <div className="text-center mb-16 animate-fade-in">
-        <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
-          <img 
-            src={earthImage} 
-            alt="Earth from space" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Real results from construction professionals using BlockPlane Enhanced
-        </p>
-      </div>
+    <div 
+      className="px-6 py-16 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${earthImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => {
           const IconComponent = stat.icon;
           return (
