@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Leaf, DollarSign } from "lucide-react";
+import earthImage from "@/assets/earth-space.png";
 
 const StatsSection = () => {
   const stats = [
@@ -40,7 +41,13 @@ const StatsSection = () => {
   return (
     <div className="px-6 py-16 bg-gradient-to-br from-muted/30 via-background to-muted/20">
       <div className="text-center mb-16 animate-fade-in">
-        <h2 className="text-4xl font-bold text-foreground mb-6">Platform Impact</h2>
+        <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+          <img 
+            src={earthImage} 
+            alt="Earth from space" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Real results from construction professionals using BlockPlane Enhanced
         </p>
