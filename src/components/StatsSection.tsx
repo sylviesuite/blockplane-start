@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Leaf, DollarSign } from "lucide-react";
-import earthImage from "@/assets/earth-space.png";
 
 const StatsSection = () => {
   const stats = [
@@ -39,20 +38,8 @@ const StatsSection = () => {
   ];
 
   return (
-    <div 
-      className="px-6 py-16 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${earthImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="px-6 py-16 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => {
           const IconComponent = stat.icon;
           return (
