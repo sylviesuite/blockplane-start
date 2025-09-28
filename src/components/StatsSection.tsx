@@ -45,7 +45,8 @@ const StatsSection = () => {
         backgroundImage: `url(${earthImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
       }}
     >
       {/* Dark overlay for better text readability */}
