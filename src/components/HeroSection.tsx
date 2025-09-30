@@ -25,8 +25,11 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
-              Marginshield
+              BlockPlane
             </h1>
+            <p className="text-lg text-white/80 mb-4 leading-relaxed max-w-3xl">
+              Powered by the Marginshield Carbon Performance Index
+            </p>
             <p className="text-xl text-white/95 mb-3 leading-relaxed max-w-3xl font-medium italic">
               The first platform to treat carbon reduction as a financial instrument.
             </p>
@@ -34,7 +37,7 @@ const HeroSection = () => {
               The First Defensible Carbon Performance Index
             </p>
             <p className="text-lg text-white/80 mb-6 leading-relaxed max-w-2xl">
-              Marginshield is the first platform to deliver a defensible Carbon Performance Index (CPI), turning carbon reduction into a manageable financial metric.
+              BlockPlane delivers a defensible Carbon Performance Index (CPI), turning carbon reduction into a manageable financial metric.
             </p>
             <p className="text-base text-white/70 mb-12 leading-relaxed max-w-2xl">
               Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
