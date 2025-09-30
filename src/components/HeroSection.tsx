@@ -27,6 +27,9 @@ const HeroSection = () => {
             <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
               Marginshield
             </h1>
+            <p className="text-xl text-white/95 mb-3 leading-relaxed max-w-3xl font-medium italic">
+              The first platform to treat carbon reduction as a financial instrument.
+            </p>
             <p className="text-2xl text-white/90 mb-4 leading-relaxed max-w-3xl">
               The First Defensible Carbon Performance Index
             </p>

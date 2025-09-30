@@ -1,22 +1,22 @@
 import { Card } from "@/components/ui/card";
-import { Building2, FileCheck, TrendingUp } from "lucide-react";
+import { Building2, FileCheck, DollarSign } from "lucide-react";
 
 const TargetMarketSection = () => {
   const benefits = [
     {
-      icon: TrendingUp,
-      title: "Secure Green Financing & De-Risk Projects",
-      description: "Access better financing terms with verifiable carbon metrics and reduce project risk through defensible data."
+      icon: Building2,
+      title: "For Developers",
+      description: "De-risk projects and secure green financing."
     },
     {
       icon: FileCheck,
-      title: "Win Bids with Verifiable, Low-Carbon Proposals",
-      description: "Stand out in competitive bids with audit-ready carbon reporting that builds trust and credibility."
+      title: "For AEC Firms",
+      description: "Win bids with verifiable, low-carbon proposals."
     },
     {
-      icon: Building2,
-      title: "Make Confident Capital Allocation Decisions",
-      description: "Optimize investments with clear carbon vs. cost trade-offs backed by transparent confidence scores."
+      icon: DollarSign,
+      title: "For Capital Partners",
+      description: "Underwrite projects with auditable carbon data."
     }
   ];
 
@@ -25,10 +25,10 @@ const TargetMarketSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Built for Commercial Real Estate Developers & their AEC Teams
+            Who It's For
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Purpose-built for teams who need defensible carbon data to win projects and secure financing
+            Built for the teams who need defensible carbon data to win projects and secure financing
           </p>
         </div>
 

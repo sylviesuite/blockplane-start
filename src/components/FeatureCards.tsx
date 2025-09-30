@@ -17,8 +17,8 @@ const FeatureCards = () => {
     },
     {
       icon: CheckCircle,
-      title: "Audit-Ready Reporting",
-      description: "Meet the Two-Hour Audit standard with rigorous documentation",
+      title: "Bid-Room Confidence",
+      description: "Audit-ready reports with source-tracked data and confidence scores to win projects and secure financing",
       items: [
         { label: "Source-Tracked Data", value: "Verified", color: "bg-green-500" },
         { label: "Confidence Scores", value: "Transparent", color: "bg-blue-500" },
