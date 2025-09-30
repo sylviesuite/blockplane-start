@@ -24,17 +24,17 @@ const HeroSection = () => {
               </span>
             </div>
             
-            <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
-              BlockPlane Carbon Calculator with Marginshield
+            <h1 className="text-6xl font-bold text-white mb-3 leading-tight">
+              BlockPlane
             </h1>
-            <p className="text-xl text-white/95 mb-3 leading-relaxed max-w-3xl font-medium italic">
+            <h2 className="text-5xl font-bold text-white/95 mb-6 leading-tight">
+              Marginshield
+            </h2>
+            <p className="text-xl text-white/95 mb-4 leading-relaxed max-w-3xl font-medium">
               The first platform to treat carbon reduction as a financial instrument.
             </p>
-            <p className="text-2xl text-white/90 mb-4 leading-relaxed max-w-3xl">
-              The First Defensible Carbon Performance Index
-            </p>
-            <p className="text-lg text-white/80 mb-6 leading-relaxed max-w-2xl">
-              BlockPlane delivers a defensible Carbon Performance Index (CPI), turning carbon reduction into a manageable financial metric.
+            <p className="text-lg text-white/90 mb-6 leading-relaxed max-w-3xl">
+              Introducing the defensible Carbon Performance Index (CPI) — the new benchmark for capital allocation in construction.
             </p>
             <p className="text-base text-white/70 mb-12 leading-relaxed max-w-2xl">
               Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
@@ -43,25 +43,25 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-scale-in">
             <Button 
-              variant="secondary" 
+              variant="default" 
               size="lg"
               className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold text-lg px-10 py-6 h-auto"
+            >
+              Request a Demo
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
               onClick={() => navigate('/dashboard')}
             >
               <Plus className="w-6 h-6 mr-2" />
               Start Your First Analysis
             </Button>
             
-            <Button 
-              variant="ghost" 
-              size="lg"
-              className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
-            >
-              Request a Demo
-            </Button>
-            
             <p className="text-sm text-white/70 ml-4">
-              Upload your Revit model → Get your CPI in minutes
+              Upload your Revit model — see your most cost-effective carbon reductions in minutes
             </p>
           </div>
         </div>
