@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection"; 
 import FeatureCards from "@/components/FeatureCards";
+import TargetMarketSection from "@/components/TargetMarketSection";
 import StatsSection from "@/components/StatsSection";
 import earthImage from "@/assets/earth-space.png";
 
@@ -23,6 +24,7 @@ const Index = () => {
         <Navigation />
         <HeroSection />
         <FeatureCards />
+        <TargetMarketSection />
         <StatsSection />
       </div>
     </div>

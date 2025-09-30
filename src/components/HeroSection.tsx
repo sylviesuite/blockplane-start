@@ -23,13 +23,16 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
-              BlockPlane Enhanced
+              Marginshield
             </h1>
             <p className="text-2xl text-white/90 mb-4 leading-relaxed max-w-3xl">
-              Sustainable Construction Intelligence Platform
+              The First Defensible Carbon Performance Index
             </p>
-            <p className="text-lg text-white/70 mb-12 leading-relaxed max-w-2xl">
-              Advanced analytics, real-time market data, and intelligent project management for the modern construction industry
+            <p className="text-lg text-white/80 mb-6 leading-relaxed max-w-2xl">
+              Marginshield is the first platform to deliver a defensible Carbon Performance Index (CPI), turning carbon reduction into a manageable financial metric.
+            </p>
+            <p className="text-base text-white/70 mb-12 leading-relaxed max-w-2xl">
+              Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
             </p>
           </div>
           
@@ -37,19 +40,19 @@ const HeroSection = () => {
             <Button 
               variant="secondary" 
               size="lg"
-              className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow"
+              className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold"
             >
-              <Plus className="w-5 h-5 mr-2" />
-              New Project
+              <Zap className="w-5 h-5 mr-2" />
+              Request a Demo
             </Button>
             
             <Button 
               variant="ghost" 
               size="lg"
-              className="text-white border border-white/30 hover:bg-white/10 hover:scale-105 transition-all duration-300"
+              className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
             >
-              <TrendingUp className="w-5 h-5 mr-2" />
-              Browse Materials
+              <Plus className="w-5 h-5 mr-2" />
+              Join the Pilot Program
             </Button>
             
             <div className="relative flex-1 max-w-md">

@@ -5,35 +5,36 @@ import { TrendingUp, Zap, BarChart3, ArrowRight, CheckCircle } from "lucide-reac
 const FeatureCards = () => {
   const features = [
     {
-      icon: TrendingUp,
-      title: "Real-Time Market Data",
-      description: "Live pricing and availability from Northern Michigan suppliers",
+      icon: BarChart3,
+      title: "Carbon Performance Index (CPI)",
+      description: "Turn carbon reduction into a manageable financial metric with defensible data",
       items: [
-        { label: "Regional Pricing", status: "Live", color: "bg-green-500" },
-        { label: "Stock Levels", status: "Real-time", color: "bg-blue-500" },
-        { label: "Market Trends", status: "↗️ Rising", color: "bg-orange-500" },
+        { label: "Verifiable Metrics", status: "Audit-Ready", color: "bg-green-500" },
+        { label: "Financial Impact", status: "Quantified", color: "bg-blue-500" },
+        { label: "Confidence Scores", status: "Built-in", color: "bg-purple-500" },
       ],
       gradient: "from-primary to-primary-glow",
     },
     {
-      icon: Zap,
-      title: "Intelligent Project Setup",
-      description: "Guided workflows with smart templates and defaults",
+      icon: CheckCircle,
+      title: "Audit-Ready Reporting",
+      description: "Meet the Two-Hour Audit standard with rigorous documentation",
       items: [
-        { label: "Project Templates", value: "12 Types", color: "bg-purple-500" },
-        { label: "Smart Defaults", value: "Climate Zone", color: "bg-indigo-500" },
-        { label: "Guided Wizards", value: "Step-by-step", color: "bg-blue-500" },
+        { label: "Source-Tracked Data", value: "Verified", color: "bg-green-500" },
+        { label: "Confidence Scores", value: "Transparent", color: "bg-blue-500" },
+        { label: "Assumptions Log", value: "Immutable", color: "bg-indigo-500" },
       ],
+      subtext: "With source-tracked data, confidence scores, and an immutable assumptions log.",
       gradient: "from-accent to-primary",
     },
     {
-      icon: BarChart3,
-      title: "Advanced Comparison",
-      description: "Professional decision-making with weighted analysis",
+      icon: Zap,
+      title: "Real-Time Decision Support",
+      description: "Make confident capital allocation decisions with live carbon & cost data",
       items: [
-        { label: "Side-by-Side Analysis", value: "2-5 Materials", color: "bg-green-500" },
-        { label: "Weighted Scoring", value: "Custom Priorities", color: "bg-orange-500" },
-        { label: "Professional Reports", value: "Client-ready", color: "bg-purple-500" },
+        { label: "Carbon vs. Cost", value: "Live Analysis", color: "bg-orange-500" },
+        { label: "Project De-Risking", value: "Predictive", color: "bg-purple-500" },
+        { label: "Green Financing", value: "Enabled", color: "bg-green-500" },
       ],
       gradient: "from-primary-glow to-accent",
     },
@@ -42,9 +43,9 @@ const FeatureCards = () => {
   return (
     <div className="px-6 py-16">
       <div className="text-center mb-16 animate-fade-in">
-        <h2 className="text-4xl font-bold text-foreground mb-6">Intelligent Construction Platform</h2>
+        <h2 className="text-4xl font-bold text-foreground mb-6">Key Features</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Advanced tools and analytics to streamline your construction projects from planning to completion
+          Defensible carbon tracking that turns sustainability into a competitive advantage
         </p>
       </div>
       
@@ -67,9 +68,15 @@ const FeatureCards = () => {
                 </div>
               </div>
               
-              <p className="text-muted-foreground mb-8 leading-relaxed text-base">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-base">
                 {feature.description}
               </p>
+              
+              {feature.subtext && (
+                <p className="text-sm font-semibold text-foreground/80 mb-6 px-4 py-3 bg-muted/30 rounded-xl border border-primary/20">
+                  {feature.subtext}
+                </p>
+              )}
               
               <div className="space-y-4">
                 {feature.items.map((item, itemIndex) => (
