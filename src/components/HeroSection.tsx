@@ -20,28 +20,28 @@ const HeroSection = () => {
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <span className="px-4 py-2 bg-white/15 backdrop-blur-sm text-white text-sm font-medium rounded-full border border-white/20">
-                v2.6 Enhanced
+                Audit-Ready
               </span>
             </div>
             
-            <h1 className="text-6xl font-bold text-white mb-3 leading-tight">
+            <h1 className="text-6xl font-bold text-white mb-5 leading-tight">
               BlockPlane: Carbon Intelligence
             </h1>
-            <h2 className="text-4xl font-bold text-white/90 mb-6 leading-tight">
+            <h2 className="text-4xl font-bold text-white/90 mb-8 leading-tight">
               Powered by Marginshield
             </h2>
-            <p className="text-xl text-white/95 mb-4 leading-relaxed max-w-3xl font-medium">
+            <p className="text-xl text-white/95 mb-6 leading-relaxed max-w-3xl font-medium">
               The first platform to treat carbon reduction as a financial instrument.
             </p>
-            <p className="text-lg text-white/90 mb-6 leading-relaxed max-w-3xl">
+            <p className="text-lg text-white/90 mb-8 leading-relaxed max-w-3xl">
               Introducing the defensible Carbon Performance Index (CPI) — the new benchmark for capital allocation in construction.
             </p>
-            <p className="text-base text-white/70 mb-12 leading-relaxed max-w-2xl">
+            <p className="text-base text-white/70 mb-14 leading-relaxed max-w-2xl">
               Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-scale-in">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-scale-in mb-10">
             <Button 
               variant="default" 
               size="lg"
@@ -59,9 +59,12 @@ const HeroSection = () => {
               <Plus className="w-6 h-6 mr-2" />
               Calculate Your Project's CPI
             </Button>
-            
-            <p className="text-sm text-white/70 ml-4">
-              Upload your Revit model — see your most cost-effective carbon reductions in minutes
+          </div>
+          
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-wider text-white/60 mb-3 font-medium">How it works</p>
+            <p className="text-sm text-white/80 leading-relaxed">
+              Upload your Revit model → See your most cost-effective carbon reductions in minutes
             </p>
           </div>
         </div>
