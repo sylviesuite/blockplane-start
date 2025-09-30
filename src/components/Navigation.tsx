@@ -1,14 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  
   const navItems = [
-    { name: "Dashboard", active: true },
-    { name: "Projects", active: false },
-    { name: "Materials", active: false },
-    { name: "Market Data", active: false },
-    { name: "Comparison", active: false },
-    { name: "Suppliers", active: false },
-    { name: "Settings", active: false },
+    { name: "Dashboard", path: "/dashboard" },
+    { name: "Projects", path: "/projects" },
+    { name: "Materials", path: "/materials" },
+    { name: "Market Data", path: "/market-data" },
+    { name: "Comparison", path: "/comparison" },
+    { name: "Suppliers", path: "/suppliers" },
+    { name: "Settings", path: "/settings" },
   ];
 
   return (
@@ -29,8 +33,9 @@ const Navigation = () => {
         {navItems.map((item) => (
           <Button
             key={item.name}
-            variant={item.active ? "secondary" : "ghost"}
+            variant={location.pathname === item.path ? "secondary" : "ghost"}
             className="text-sm font-medium"
+            onClick={() => navigate(item.path)}
           >
             {item.name}
           </Button>

@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Plus, Search, Zap, TrendingUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative overflow-hidden bg-gradient-hero rounded-3xl mx-6 mt-6 mb-12 shadow-2xl">
       {/* Animated background elements */}
@@ -41,6 +43,7 @@ const HeroSection = () => {
               variant="secondary" 
               size="lg"
               className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold text-lg px-10 py-6 h-auto"
+              onClick={() => navigate('/dashboard')}
             >
               <Plus className="w-6 h-6 mr-2" />
               Start Your First Analysis
