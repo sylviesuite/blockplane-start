@@ -40,10 +40,10 @@ const HeroSection = () => {
             <Button 
               variant="secondary" 
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold"
+              className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold text-lg px-10 py-6 h-auto"
             >
-              <Zap className="w-5 h-5 mr-2" />
-              Request a Demo
+              <Plus className="w-6 h-6 mr-2" />
+              Start Your First Analysis
             </Button>
             
             <Button 
@@ -51,17 +51,12 @@ const HeroSection = () => {
               size="lg"
               className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
             >
-              <Plus className="w-5 h-5 mr-2" />
-              Join the Pilot Program
+              Request a Demo
             </Button>
             
-            <div className="relative flex-1 max-w-md">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white/60" />
-              <Input 
-                placeholder="Search projects, materials, suppliers..."
-                className="pl-12 h-12 bg-white/20 backdrop-blur-sm border-white/30 text-white placeholder:text-white/60 focus:ring-white/50 focus:bg-white/25 transition-all duration-300 rounded-xl"
-              />
-            </div>
+            <p className="text-sm text-white/70 ml-4">
+              Upload your Revit model → Get your CPI in minutes
+            </p>
           </div>
         </div>
       </div>

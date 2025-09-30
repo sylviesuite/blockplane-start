@@ -1,39 +1,39 @@
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Users, Leaf, DollarSign } from "lucide-react";
+import { Building2, LineChart, Award, Shield } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
     {
-      value: "2,847",
-      label: "Materials Analyzed",
+      value: "$47B+",
+      label: "Construction Value Tracked",
       color: "text-green-600",
       bgColor: "bg-green-50 dark:bg-green-950/20",
-      icon: TrendingUp,
-      trend: "+12% this month"
+      icon: Building2,
+      trend: "Across commercial projects"
     },
     {
-      value: "156",
-      label: "Active Projects",
+      value: "2M+",
+      label: "Material Specifications",
       color: "text-blue-600", 
       bgColor: "bg-blue-50 dark:bg-blue-950/20",
-      icon: Users,
-      trend: "+8 new projects"
+      icon: LineChart,
+      trend: "In verified database"
     },
     {
-      value: "89%",
-      label: "Sustainability Score",
+      value: "ISO 14064",
+      label: "Audit-Ready Standard",
       color: "text-purple-600",
       bgColor: "bg-purple-50 dark:bg-purple-950/20",
-      icon: Leaf,
-      trend: "Above industry avg"
+      icon: Award,
+      trend: "Built-in compliance"
     },
     {
-      value: "$2.3M",
-      label: "Cost Savings",
+      value: "2-Hour",
+      label: "Carbon Audit Time",
       color: "text-orange-600",
       bgColor: "bg-orange-50 dark:bg-orange-950/20",
-      icon: DollarSign,
-      trend: "+15% vs last year"
+      icon: Shield,
+      trend: "vs. 2-week industry avg"
     },
   ];
 
