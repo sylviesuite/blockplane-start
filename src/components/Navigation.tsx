@@ -10,7 +10,7 @@ const Navigation = () => {
     { name: "Projects", path: "/projects" },
     { name: "Materials", path: "/materials" },
     { name: "Market Data", path: "/market-data" },
-    { name: "Comparison", path: "/comparison" },
+    { name: "CPI Analysis", path: "/comparison" },
     { name: "Suppliers", path: "/suppliers" },
     { name: "Settings", path: "/settings" },
   ];

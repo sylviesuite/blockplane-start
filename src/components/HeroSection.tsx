@@ -25,10 +25,10 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-6xl font-bold text-white mb-3 leading-tight">
-              BlockPlane
+              BlockPlane: Carbon Intelligence
             </h1>
-            <h2 className="text-5xl font-bold text-white/95 mb-6 leading-tight">
-              Marginshield
+            <h2 className="text-4xl font-bold text-white/90 mb-6 leading-tight">
+              Powered by Marginshield
             </h2>
             <p className="text-xl text-white/95 mb-4 leading-relaxed max-w-3xl font-medium">
               The first platform to treat carbon reduction as a financial instrument.
@@ -57,7 +57,7 @@ const HeroSection = () => {
               onClick={() => navigate('/dashboard')}
             >
               <Plus className="w-6 h-6 mr-2" />
-              Start Your First Analysis
+              Calculate Your Project's CPI
             </Button>
             
             <p className="text-sm text-white/70 ml-4">
