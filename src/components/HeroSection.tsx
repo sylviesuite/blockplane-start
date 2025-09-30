@@ -24,12 +24,12 @@ const HeroSection = () => {
               </span>
             </div>
             
-            <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-6xl font-bold text-white mb-3 leading-tight">
               BlockPlane
             </h1>
-            <p className="text-lg text-white/80 mb-4 leading-relaxed max-w-3xl">
-              Powered by the Marginshield Carbon Performance Index
-            </p>
+            <h2 className="text-5xl font-bold text-white/95 mb-6 leading-tight">
+              Marginshield
+            </h2>
             <p className="text-xl text-white/95 mb-3 leading-relaxed max-w-3xl font-medium italic">
               The first platform to treat carbon reduction as a financial instrument.
             </p>
