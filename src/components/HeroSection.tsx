@@ -13,59 +13,98 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-glow/20 rounded-full translate-y-1/2 -translate-x-1/2"></div>
       
       <div className="relative px-8 py-16">
-        <div className="max-w-4xl">
-          <div className="animate-fade-in">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4 shadow-glow">
-                <Zap className="w-6 h-6 text-white" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Content */}
+          <div className="max-w-2xl">
+            <div className="animate-fade-in">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4 shadow-glow">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <span className="px-4 py-2 bg-white/15 backdrop-blur-sm text-white text-sm font-medium rounded-full border border-white/20">
+                  Audit-Ready
+                </span>
               </div>
-              <span className="px-4 py-2 bg-white/15 backdrop-blur-sm text-white text-sm font-medium rounded-full border border-white/20">
-                Audit-Ready
-              </span>
+              
+              <h1 className="text-6xl font-bold text-white mb-5 leading-tight">
+                BlockPlane: Carbon Intelligence
+              </h1>
+              <h2 className="text-4xl font-bold text-white/90 mb-8 leading-tight">
+                Powered by Marginshield
+              </h2>
+              <p className="text-xl text-white/95 mb-6 leading-relaxed font-medium">
+                The first platform to treat carbon reduction as a financial instrument.
+              </p>
+              <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                Introducing the defensible Carbon Performance Index (CPI) — the new benchmark for capital allocation in construction.
+              </p>
+              <p className="text-base text-white/70 mb-14 leading-relaxed">
+                Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
+              </p>
             </div>
             
-            <h1 className="text-6xl font-bold text-white mb-5 leading-tight">
-              BlockPlane: Carbon Intelligence
-            </h1>
-            <h2 className="text-4xl font-bold text-white/90 mb-8 leading-tight">
-              Powered by Marginshield
-            </h2>
-            <p className="text-xl text-white/95 mb-6 leading-relaxed max-w-3xl font-medium">
-              The first platform to treat carbon reduction as a financial instrument.
-            </p>
-            <p className="text-lg text-white/90 mb-8 leading-relaxed max-w-3xl">
-              Introducing the defensible Carbon Performance Index (CPI) — the new benchmark for capital allocation in construction.
-            </p>
-            <p className="text-base text-white/70 mb-14 leading-relaxed max-w-2xl">
-              Audit-ready carbon tracking with source-tracked data, confidence scores, and verifiable reporting for construction projects.
-            </p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-scale-in mb-10">
-            <Button 
-              variant="default" 
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold text-lg px-10 py-6 h-auto"
-            >
-              Request a Demo
-            </Button>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 animate-scale-in mb-10">
+              <Button 
+                variant="default" 
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-glow font-semibold text-lg px-10 py-6 h-auto"
+              >
+                Request a Demo
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
+                onClick={() => navigate('/dashboard')}
+              >
+                <Plus className="w-6 h-6 mr-2" />
+                Calculate Your Project's CPI
+              </Button>
+            </div>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
-              onClick={() => navigate('/dashboard')}
-            >
-              <Plus className="w-6 h-6 mr-2" />
-              Calculate Your Project's CPI
-            </Button>
+            <div>
+              <p className="text-xs uppercase tracking-wider text-white/60 mb-3 font-medium">How it works</p>
+              <p className="text-sm text-white/80 leading-relaxed">
+                Upload your Revit model → See your most cost-effective carbon reductions in minutes
+              </p>
+            </div>
           </div>
-          
-          <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-wider text-white/60 mb-3 font-medium">How it works</p>
-            <p className="text-sm text-white/80 leading-relaxed">
-              Upload your Revit model → See your most cost-effective carbon reductions in minutes
-            </p>
+
+          {/* Right Column - Visual Stats */}
+          <div className="hidden lg:flex flex-col space-y-6 animate-fade-in">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <p className="text-white/70 text-sm mb-2">Average Cost Savings</p>
+                  <p className="text-4xl font-bold text-white">23%</p>
+                </div>
+                <TrendingUp className="w-8 h-8 text-white/60" />
+              </div>
+              <p className="text-white/60 text-xs">Per project with CPI optimization</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <p className="text-white/70 text-sm mb-2">Carbon Reduction</p>
+                  <p className="text-4xl font-bold text-white">34%</p>
+                </div>
+                <Zap className="w-8 h-8 text-white/60" />
+              </div>
+              <p className="text-white/60 text-xs">Average reduction across all projects</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <p className="text-white/70 text-sm mb-2">Audit Confidence</p>
+                  <p className="text-4xl font-bold text-white">98%</p>
+                </div>
+                <Search className="w-8 h-8 text-white/60" />
+              </div>
+              <p className="text-white/60 text-xs">Source-tracked data verification rate</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Settings } from "lucide-react";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -9,10 +10,7 @@ const Navigation = () => {
     { name: "Dashboard", path: "/dashboard" },
     { name: "Projects", path: "/projects" },
     { name: "Materials", path: "/materials" },
-    { name: "Market Data", path: "/market-data" },
     { name: "CPI Analysis", path: "/comparison" },
-    { name: "Suppliers", path: "/suppliers" },
-    { name: "Settings", path: "/settings" },
   ];
 
   return (
@@ -40,6 +38,14 @@ const Navigation = () => {
             {item.name}
           </Button>
         ))}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="ml-4"
+          onClick={() => navigate('/settings')}
+        >
+          <Settings className="w-5 h-5" />
+        </Button>
       </div>
     </nav>
   );
