@@ -26,12 +26,12 @@ const HeroSection = () => {
                 </span>
               </div>
               
-              <h1 className="text-6xl font-bold text-white mb-5 leading-tight">
+              <h1 className="text-6xl font-bold text-white mb-3 leading-tight">
                 BlockPlane: Carbon Intelligence
               </h1>
-              <h2 className="text-4xl font-bold text-white/90 mb-8 leading-tight">
+              <p className="text-lg text-white/70 mb-8 font-medium">
                 Powered by Marginshield
-              </h2>
+              </p>
               <p className="text-xl text-white/95 mb-6 leading-relaxed font-medium">
                 The first platform to treat carbon reduction as a financial instrument.
               </p>
@@ -55,11 +55,11 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="text-white border-2 border-white/40 hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300"
+                className="text-white border-2 border-white/40 bg-transparent hover:bg-white/10 hover:border-white/60 hover:scale-105 transition-all duration-300 font-semibold"
                 onClick={() => navigate('/dashboard')}
               >
-                <Plus className="w-6 h-6 mr-2" />
-                Calculate Your Project's CPI
+                <Plus className="w-5 h-5 mr-2" />
+                Start Project CPI
               </Button>
             </div>
             
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
           {/* Right Column - Visual Stats */}
           <div className="hidden lg:flex flex-col space-y-6 animate-fade-in">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow transition-all duration-300 hover:bg-white/15 hover:scale-105 hover:shadow-xl cursor-pointer">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <p className="text-white/70 text-sm mb-2">Average Cost Savings</p>
@@ -81,10 +81,10 @@ const HeroSection = () => {
                 </div>
                 <TrendingUp className="w-8 h-8 text-white/60" />
               </div>
-              <p className="text-white/60 text-xs">Per project with CPI optimization</p>
+              <p className="text-white/60 text-xs">Typical project savings through CPI optimization</p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow transition-all duration-300 hover:bg-white/15 hover:scale-105 hover:shadow-xl cursor-pointer">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <p className="text-white/70 text-sm mb-2">Carbon Reduction</p>
@@ -95,7 +95,7 @@ const HeroSection = () => {
               <p className="text-white/60 text-xs">Average reduction across all projects</p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-glow transition-all duration-300 hover:bg-white/15 hover:scale-105 hover:shadow-xl cursor-pointer">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <p className="text-white/70 text-sm mb-2">Audit Confidence</p>
@@ -103,7 +103,13 @@ const HeroSection = () => {
                 </div>
                 <Search className="w-8 h-8 text-white/60" />
               </div>
-              <p className="text-white/60 text-xs">Source-tracked data verification rate</p>
+              <p className="text-white/60 text-xs">Data integrity verified by Marginshield</p>
+            </div>
+            
+            <div className="mt-4 text-center">
+              <p className="text-white/50 text-xs italic">
+                *Projected savings based on model analysis of 50+ commercial assemblies
+              </p>
             </div>
           </div>
         </div>
